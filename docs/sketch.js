@@ -1,4 +1,4 @@
-var w = 500;
+var w = 400;
 var d = 2;
 
 function setup() {
