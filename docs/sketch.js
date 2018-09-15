@@ -5,9 +5,10 @@ function setup() {
   createCanvas(w, w);
   fill(255);
   noStroke();
-  frameRate(15);
-  power = createSlider(1, 100, 2);
+  frameRate(5);
+  power = createSlider(0, 1000, 20);
   power.position(10, w+10);
+  power.style('width', '400px');
 
   powerDisp = createDiv('');
 }
@@ -15,7 +16,7 @@ function setup() {
 function draw() {
   background(0);
   pixelDensity(d);
-  var pow = power.value();
+  var pow = power.value()/10;
   loadPixels();
   for (var x = 0; x < w*d; x++) {
     for (var y = 0; y < w*d; y++) {
