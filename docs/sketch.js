@@ -5,7 +5,7 @@ function setup() {
   createCanvas(w, w);
   fill(255);
   noStroke();
-  frameRate(5);
+  frameRate(15);
   power = createSlider(1, 100, 2);
   power.position(10, w+10);
 
